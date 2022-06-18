@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2a411b-e6fe-4206-b9c2-36fb25e2f073" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Homepage/Homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductPage/ProductPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductCard/ProductCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductCard/ProductCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideBar/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -62,6 +63,11 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/FIlter" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +78,8 @@
       <updated>1655291123916</updated>
       <workItem from="1655291127521" duration="4000" />
       <workItem from="1655291200817" duration="47000" />
-      <workItem from="1655291289505" duration="13089000" />
+      <workItem from="1655291289505" duration="28134000" />
+      <workItem from="1655473185469" duration="10088000" />
     </task>
     <servers />
   </component>

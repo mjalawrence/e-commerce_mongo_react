@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react"
-import '../Homepage/Homepage.scss'
+import './/ProductPage.scss'
 import ProductCard from '../ProductCard'
 
-const Homepage = () => {
+const ProductPage = () => {
 
     const [productData, setProductData] = useState([])
 
@@ -33,4 +33,4 @@ const Homepage = () => {
     )
 }
 
-export default Homepage
+export default ProductPage

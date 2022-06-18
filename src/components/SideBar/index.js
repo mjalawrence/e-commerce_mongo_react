@@ -1,28 +1,17 @@
-import {useEffect, useState} from "react"
+import Filter from '../Filter'
 
 const SideBar = () => {
-
-    const [optionData, setOptionData] = useState({})
-
-    useEffect(() => {
-        fetch("http://localhost:3001/products/categories")
-            .then(response => response.json())
-            .then(data => {
-                setOptionData(data)
-            })
-    }, [])
-
-    let title = Object.keys(optionData)[0]
-    // console.log(optionData)
-    let characterOptionData = optionData.categories?.map((option) => {
-        return <p>{option}</p>
-    })
-
     return (
-        <h5>
-            {title}
-            {characterOptionData}
-        </h5>
+        <div>
+            <Filter mode="categories"  />
+            <Filter mode="characters" />
+            <br></br>
+            <div> search by:</div>
+            <input type="radio" name="key" value="key" />
+            <input type="radio" name="key" value="key" />
+            <input type="radio" name="key" value="key" />
+            <input type="search" name="key" value="value" />
+        </div>
     )
 }
 
