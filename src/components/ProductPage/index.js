@@ -2,17 +2,42 @@ import {useEffect, useState} from "react"
 import './/ProductPage.scss'
 import ProductCard from '../ProductCard'
 
-const ProductPage = () => {
+const ProductPage = ({activeCategoryFilter, activeCharacterFilter}) => {
 
     const [productData, setProductData] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:3001/products")
-            .then(response => response.json())
-            .then(data => {
-                setProductData(data)
-            })
-    }, [])
+            console.log(activeCategoryFilter)
+            console.log(activeCharacterFilter)
+
+        if (Object.keys(activeCategoryFilter).length !== 0 && Object.keys(activeCharacterFilter).length !== 0)
+        {
+            fetch(`http://localhost:3001/products?${activeCategoryFilter.title}=${activeCategoryFilter.option}&${activeCharacterFilter.title}=${activeCharacterFilter.option}`)
+                .then(response => response.json())
+                .then(data => {
+                    setProductData(data)
+                })
+        } else if (Object.keys(activeCategoryFilter).length === 0 && Object.keys(activeCharacterFilter).length !== 0) {
+            fetch(`http://localhost:3001/products?${activeCharacterFilter.title}=${activeCharacterFilter.option}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        setProductData(data)
+                    })
+        } else if (Object.keys(activeCategoryFilter).length !== 0 && Object.keys(activeCharacterFilter).length === 0) {
+            fetch(`http://localhost:3001/products?${activeCategoryFilter.title}=${activeCategoryFilter.option}`)
+                .then(response => response.json())
+                .then(data => {
+                    setProductData(data)
+                })
+        } else {
+            fetch(`http://localhost:3001/products`)
+
+                .then(response => response.json())
+                .then(data => {
+                    setProductData(data)
+                })
+        }
+    }, [activeCategoryFilter, activeCharacterFilter])
 
     // console.log(productData)
     let products = productData.map((product, index) => {
